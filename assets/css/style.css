@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+   }
+   
+   body{
+    background-color:rgb(255, 255, 255);
+   }
+   
+   .startBtn{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: ;
+   }
+   
+   .startBtn button{
+   
+   }
