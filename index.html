@@ -4,35 +4,38 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Out Smart Me</title>
-<link rel="stylesheet" href="./assets/css/style.css">
-<link rel="stylesheet" href="./assets/js/quiz-time.js">
+    <title>Out Smart Me</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 
 <body>
-<div class="wrapper">
-<header>
-<h1>Out Smart Me</h1>
-</header>
 
-<div class="card" id="start-screen">
-<div class="card-header">
-<h2>Code Quiz</h2>
+<div class="wrapper">
+    <header>
+        <h1>Out Smart Me</h1>
+    </header>
+
+    <div class="card" id="start-screen">
+        <div class="card-header">
+            <h2>Code Quiz</h2>
+        </div>
+        <div class="container">
+            <p>
+            Try to answer the following code related questions within the time limit. Keep in mind that incorrect answers will penalize your score time by ten seconds!
+            </p>
+            <div class="card-footer">
+                <button id="startBtn" class="btn">Start</button>
+                <button id= "scoreBtn" class="btn">High Scores</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="hide" id="questions">
+        <h2 id="question-title"></h2>
+    <div id="question-answers"></div>
 </div>
-<div class="container">
-<p>
-Try to answer the following code related questions within the time limit. Keep in mind that incorrect answers will penalize your score time by ten seconds!
-</p>
-<div class="card-footer">
-<button id="startBtn" class="btn">Start</button>
-<button id= "scoreBtn" class="btn">High Scores</button>
-</div>
-</div>
-</div>
-<div class="hide" id="questions">
-<h2 id="question-title"></h2>
-<div id="question-answers"></div>
-</div>
+
 <script src="./assets/js/quiz-time.js"></script> 
+
 </body>
 </html>
    

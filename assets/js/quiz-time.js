@@ -4,24 +4,56 @@ const questionTitle = document.getElementById("question-title");
 const questionAnswers = document.getElementById("question-answers");
 const startScreen = document.getElementById("start-screen");
 
+var answersIndex = 0;
 //start quiz//
 
 function generateQuiz (){
-startScreen.setAttribute("class", "hide")
-questions.removeAttribute("class")
+  startScreen.setAttribute("class", "hide")
+  questions.removeAttribute("class")
 
 
-getQuestion()
+  getQuestion()
 }
 
 function getQuestion() {
-let currentQuestion = allQuestions[0] 
-questionTitle.textContent = currentQuestion.question
-questionAnswers.innerHTML = ""
-currentQuestion.answers.forEach(function(choice, i){
-console.log(choice)
+  let currentQuestion = allQuestions[answersIndex] 
+  questionTitle.textContent = currentQuestion.question
+  questionAnswers.innerHTML = ""
+  currentQuestion.answers.forEach(function(choice, i) {
+    console.log(choice.text)
+  
+    var option = document.createElement("button");
+    option.setAttribute("class", "choice");
+    option.setAttribute("value", choice.text);
+    option.textContent = i + 1 + ". " + choice.text;
+  
+    option.onclick = questionClick;
+   
+    questionAnswers.appendChild(option);
+
+  
+
 })
 }
+
+function questionClick () {
+
+  console.log("click")
+  answersIndex++
+  if (answersIndex > 3) {
+    return
+  }
+  if (this.value) {
+    console.log("this is the current value: " + this.value)
+    console.log("this is the value of answers.text " + allQuestions[answersIndex].answers)
+  }
+  getQuestion()
+}
+
+
+
+
+
 // set timer 90 sec and cout down //
 // lose 10 sec on timer for wrong answer//
 
@@ -72,17 +104,7 @@ answers: [
 }
 ]
 
-
-// show answers//
-
-// give correct or wrong answer//
-
-// move on once answer is correct //
-
-// end game if timer reaches 0//
-// show high scores//
-//after quiz submit high score//
 startButton.onclick = generateQuiz;
 
-//choice.text (the answer in all questions arr)
+
 
