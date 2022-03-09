@@ -4,6 +4,7 @@ const questionTitle = document.getElementById("question-title");
 const questionAnswers = document.getElementById("question-answers");
 const startScreen = document.getElementById("start-screen");
 
+
 var answersIndex = 0;
 //start quiz//
 
@@ -13,6 +14,16 @@ function generateQuiz (){
 
 
   getQuestion()
+}
+
+
+function startCountdown(seconds) {
+  let counter = seconds;
+    
+  const interval = setInterval(() => {
+    console.log(counter);
+    counter--;
+  }, 1000);
 }
 
 function getQuestion() {
@@ -49,8 +60,6 @@ function questionClick () {
   }
   getQuestion()
 }
-
-
 
 
 
@@ -105,6 +114,3 @@ answers: [
 ]
 
 startButton.onclick = generateQuiz;
-
-
-
