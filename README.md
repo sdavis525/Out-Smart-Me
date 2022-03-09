@@ -14,7 +14,7 @@ WHEN the game is over
 THEN I can save my initials and score
 
 
-
+deployment link : https://sdavis525.github.io/Out-Smart-Me/
 
 
 
