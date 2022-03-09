@@ -27,5 +27,5 @@ THEN I can save my initials and score
 <img width="1512" alt="Screen Shot 2022-03-09 at 2 42 55 PM" src="https://user-images.githubusercontent.com/98237529/157523104-6e4248d8-d297-4e06-930c-024e06450a47.png"><img width="1512" alt="Screen Shot 2022-03-09 at 2 42 43 PM" src="https://user-images.githubusercontent.com/98237529/157523140-a1e472d8-128b-4ce8-bbcb-3fda31eb6000.png">
 
 
-![Uploading Screen Shot 2022-03-09 at 2.42.43 PM.png…]()
+
 
